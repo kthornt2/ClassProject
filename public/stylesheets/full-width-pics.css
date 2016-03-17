@@ -18,12 +18,13 @@ body {
 }
 
 .image-bg-fluid-height {
-	background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
+	background: url('https://pixabay.com/static/uploads/photo/2016/02/24/10/47/meeting-1219530_960_720.jpg') no-repeat center center scroll;
+    background-size: 1920px 450px;
     padding: 100px 0;
 }
 
 .image-bg-fixed-height {
-	background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
+	background: url('https://pixabay.com/static/uploads/photo/2016/02/24/10/47/meeting-1219530_960_720.jpg') no-repeat center center scroll;
     height: 450px;
 }
 
