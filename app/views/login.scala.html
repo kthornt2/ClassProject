@@ -18,6 +18,8 @@
 
         <title>Full Width Pics - Start Bootstrap Template</title>
 
+
+        <link href='@routes.Assets.versioned("stylesheets/style.css")' rel="stylesheet">
             <!-- Bootstrap Core CSS -->
         <link href='@routes.Assets.versioned("stylesheets/bootstrap.min.css")' rel="stylesheet">
 
@@ -46,11 +48,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="@routes.HomeController.index()">HOME</a>
+
                 </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
+                        <li>
+                            <a href="@routes.HomeController.index()">Home</a>
+                        </li>
                         <li>
                             <a href="@routes.LoginController.login()">Login</a>
                         </li>
@@ -81,8 +86,29 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="section-heading">Login</h1>
 
+
+                        <body>
+
+                            <div class="login-page">
+                                <div class="form">
+
+                                    <form class="login-form">
+                                        <input type="text" placeholder="username"/>
+                                        <input type="password" placeholder="password"/>
+                                        <button>login</button>
+                                        <p class="message">Not registered? <a href="@routes.RegisterController.register()">Create an account</a></p>
+                                    </form>
+                                </div>
+                            </div>
+                            <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+                            <script src="js/index.js"></script>
+
+
+
+
+                        </body>
                     </div>
                 </div>
             </div>
