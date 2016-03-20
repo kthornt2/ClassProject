@@ -11,7 +11,7 @@ import views.html.*;
  */
 public class HomeController extends Controller {
 
-    /**
+    /**sp
      * An action that renders an HTML page with a welcome message.
      * The configuration in the <code>routes</code> file means that
      * this method will be called when the application receives a
@@ -20,6 +20,6 @@ public class HomeController extends Controller {
     public Result index() {
         return ok(index.render("Your new application is ready."));
     }
-    public Result aboutUs() { return ok(aboutus.render("About Us"));}
+
 
 }
