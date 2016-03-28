@@ -1,6 +1,9 @@
 package controllers;
+import play.api.libs.ws.ssl.SystemConfiguration;
+import source.DBConnect;
 
-import play.*;
+import models.User;
+import play.data.Form;
 import play.mvc.*;
 
 import views.html.*;
@@ -19,5 +22,19 @@ public class RegisterController extends Controller {
      */
 
     public Result register() { return ok(register.render("Register"));}
+
+
+    //---------------> Stuck here in addUser method
+    public Result addUser(){
+
+
+
+        //User user = Form.form(User.class)
+        //System.out.println(user);
+
+        //User user = new User(fname, lname, pswd, email);
+        return redirect(routes.LoginController.login());
+
+    }
 
 }

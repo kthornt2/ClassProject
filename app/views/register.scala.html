@@ -4,6 +4,10 @@
  *@
 @(message: String)
 
+@main("Welcome to website-name"){
+
+}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +26,7 @@
             <!-- Bootstrap Core CSS -->
         <link href='@routes.Assets.versioned("stylesheets/bootstrap.min.css")' rel="stylesheet">
 
-            <!-- Custom CSS -->
+            <!-- USERom CSS -->
         <link href='@routes.Assets.versioned("stylesheets/full-width-pics.css")' rel="stylesheet">
 
             <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -91,12 +95,12 @@
                             <div class="register-page">
                                 <div class="form">
                                     <h2 class="lead section-lead text-danger">Register:</h2>
-                                    <form class="register-form">
-                                        <input type="text" placeholder="first name"/>
-                                        <input type="text" placeholder="last name"/>
-                                        <input type="password" placeholder="password"/>
-                                        <input type="text" placeholder="confirm password"/>
-                                        <input type="text" placeholder="email address"/>
+                                    <form class="register-form" action = "@routes.RegisterController.addUser()" method="post">
+                                        <input type="text" fname = "first name" placeholder="first name"/>
+                                        <input type="text" lname = "last name" placeholder="last name"/>
+                                        <input type="password" pswd = "password" placeholder="password"/>
+                                        <input type="password" placeholder="confirm password"/>
+                                        <input type="text" email = "email address" placeholder="email address"/>
 
 
                                         <button>create</button>
